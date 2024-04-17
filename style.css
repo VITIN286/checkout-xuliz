@@ -18,7 +18,6 @@
   body{
     background: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
   }
 
 .container{
@@ -27,7 +26,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas */
 }
 
 .container2{
@@ -50,8 +49,8 @@
 
 .dados-titular{
     position: absolute;
-    margin: 100px;
-    transform: scale(0.9);
+    margin: 70px;
+    transform: scale(0.9); 
 }
 
 #voltar{
@@ -448,3 +447,67 @@ u{
     line-height: normal;
     text-decoration-line: underline;
 }
+
+/*RESPONSIVIDADE-WEB*/
+
+@media screen and (max-width: 1080px) {
+    .container {
+        position: relative; /* Importante para posicionamento relativo */
+        transform: scale(0.9); /* Diminui o container em 80% */
+        left: 0%; /* Mantém o container no centro horizontalmente */
+        top: 50%; /* Mantém o container no centro verticalmente */
+        transform-origin: center; /* Define o ponto de transformação no centro */
+    }
+
+    .container > * {
+        transform: scale(1.0); /* Aumenta o conteúdo dentro do container em 125% */
+    }
+}
+
+@media screen and (max-width: 973px) {
+    .container {
+        position: relative; /* Importante para posicionamento relativo */
+        transform: scale(0.8); /* Diminui o container em 80% */
+        left: 0%; /* Mantém o container no centro horizontalmente */
+        top: 50%; /* Mantém o container no centro verticalmente */
+        transform-origin: center; /* Define o ponto de transformação no centro */
+    }
+
+    .container > * {
+        transform: scale(1.0); /* Aumenta o conteúdo dentro do container em 125% */
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .container {
+        flex-direction: column; /* Muda o layout para uma coluna */
+        align-items: center; /* Centraliza os contêineres na horizontal */
+    }
+
+    .container2{
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .container3{
+        border-radius: 0 0 20px 20px;
+    }
+
+    .dados-titular{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        transform: scale(1.1);
+        padding-top: 20px;
+    }
+
+    .container2, .container3 {
+        width: 100%; /* Define a largura como 100% para ocupar a largura total */
+        max-width: none; /* Remove a largura máxima definida anteriormente */
+        transform: scale(1.2);
+    }
+}
+
