@@ -18,6 +18,7 @@
   body{
     background: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
   }
 
 .container{
@@ -26,6 +27,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 .container2{
