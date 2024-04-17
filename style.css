@@ -26,7 +26,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    grid-template-columns: 1fr 1fr; /* Cria duas colunas */
+    grid-template-columns: 1fr 1fr;
 }
 
 .container2{
@@ -424,7 +424,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
-    line-height: 16px; /* 80% */
+    line-height: 16px;
 }
 
 #final-rodape{
@@ -452,36 +452,36 @@ u{
 
 @media screen and (max-width: 1080px) {
     .container {
-        position: relative; /* Importante para posicionamento relativo */
-        transform: scale(0.9); /* Diminui o container em 80% */
-        left: 0%; /* Mantém o container no centro horizontalmente */
-        top: 50%; /* Mantém o container no centro verticalmente */
-        transform-origin: center; /* Define o ponto de transformação no centro */
+        position: relative; 
+        transform: scale(0.9); 
+        left: 0%; 
+        top: 50%; 
+        transform-origin: center; 
     }
 
     .container > * {
-        transform: scale(1.0); /* Aumenta o conteúdo dentro do container em 125% */
+        transform: scale(1.0); 
     }
 }
 
 @media screen and (max-width: 973px) {
     .container {
-        position: relative; /* Importante para posicionamento relativo */
-        transform: scale(0.8); /* Diminui o container em 80% */
-        left: 0%; /* Mantém o container no centro horizontalmente */
-        top: 50%; /* Mantém o container no centro verticalmente */
-        transform-origin: center; /* Define o ponto de transformação no centro */
+        position: relative;
+        transform: scale(0.8);
+        left: 0%;
+        top: 50%;
+        transform-origin: center;
     }
 
     .container > * {
-        transform: scale(1.0); /* Aumenta o conteúdo dentro do container em 125% */
+        transform: scale(1.0);
     }
 }
 
 @media screen and (max-width: 914px) {
     .container {
-        flex-direction: column; /* Muda o layout para uma coluna */
-        align-items: center; /* Centraliza os contêineres na horizontal */
+        flex-direction: column;
+        align-items: center;
     }
 
     .container2{
@@ -505,8 +505,8 @@ u{
     }
 
     .container2, .container3 {
-        width: 100%; /* Define a largura como 100% para ocupar a largura total */
-        max-width: none; /* Remove a largura máxima definida anteriormente */
+        width: 100%;
+        max-width: none;
         transform: scale(1.2);
     }
 }
