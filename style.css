@@ -208,7 +208,7 @@ input:not(:focus)::placeholder {
 }
 
 #card{
-    width: 169px;
+    width: 165px;
     height: 120px;
     border-radius: 10px;
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
