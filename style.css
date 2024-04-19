@@ -31,7 +31,7 @@
 .container2{
     background: var(--xuliz-colors-brancoc, #F1F1F1);
     width: 680px;
-    height: 650px;
+    height: 720px;
     border-radius: 20px 0 0 20px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     position: relative;
@@ -40,16 +40,16 @@
 .container3{
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     width: 380px;
-    height: 650px;
+    height: 720px;
     border-radius: 0 20px 20px 0;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     position: relative;
 }
 
 .dados-titular{
-    position: absolute;
-    margin: 70px;
-    transform: scale(0.9); 
+    position: relative;
+    transform: scale(0.8);
+    top: 18%;
 }
 
 #voltar{
@@ -203,7 +203,7 @@ input:not(:focus)::placeholder {
 
 .cards-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 35px;
 }
 
@@ -214,6 +214,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
+    margin: 5px;
 }
 
 #card>img{
@@ -262,6 +263,7 @@ input:not(:focus)::placeholder {
 
 #logo-rodape>p{
     margin-right: 10px;
+    font-size: 12px;
 }
 
 #logo-rodape>img{
@@ -270,8 +272,7 @@ input:not(:focus)::placeholder {
 }
 
 #copy{
-    margin-left: 100px;
-    font-size: 10px;
+    margin-left: 180px;
 }
 
 #copy>p{
@@ -280,7 +281,7 @@ input:not(:focus)::placeholder {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .container5{
@@ -429,6 +430,7 @@ input:not(:focus)::placeholder {
 #total{
     display: flex;
     flex-direction: column;
+    margin-bottom: 95px;
 }
 
 #parcelas{
@@ -502,7 +504,7 @@ u{
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1043px) {
     #copy p{
         font-size: 9px;
     }
@@ -532,8 +534,8 @@ u{
         border-radius: 20px 20px 0 0;
         display: flex;
         justify-content: center;
-        padding-top: 20px;
         padding-bottom: 30px;
+        height: 1000px;
     }
 
     .container3{
